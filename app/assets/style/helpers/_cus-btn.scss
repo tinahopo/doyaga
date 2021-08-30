@@ -1,0 +1,31 @@
+.btn-warning {
+  color: $dark;
+  background-color: $warning;
+  border: $warning;
+  &:hover {
+    color: #fff;
+    background-color: $secondary;
+    border: $secondary;
+  }
+}
+.btn-warning-dark {
+  color: $primary;
+  background-color: $warning;
+  border: $warning;
+  &:hover {
+    color: #fff;
+    background-color: $primary;
+    border: $primary;
+  }
+}
+
+.btn-secondary {
+  color: $white;
+  background-color: $secondary;
+  border: $warning;
+  &:hover {
+    color: $white;
+    background-color: $primary;
+    border: $primary;
+  }
+}

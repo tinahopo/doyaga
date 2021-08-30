@@ -1,0 +1,157 @@
+---
+title: 立即預約
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<section class="reservation-data pt-5 pt-md-7 pb-9 pb-md-8 pb-lg-92">
+  <div class="container">
+    <h3 class="text-primary text-center mb-4 mb-md-3">立即預約</h3>
+    <div class="row justify-content-center mb-43">
+      <div class="col-4 col-md-2 ">
+        <div class="border-radius-16 bg-warning text-primary  text-center py-26">
+          選擇方案
+        </div>
+      </div>
+      <div class="col-4 col-md-2">
+        <div class="border-radius-16 bg-primary text-white text-center py-26">填寫資料</div>
+      </div>
+      <div class="col-4 col-md-2">
+        <div class="border-radius-16 bg-warning text-primary text-center py-26">完成預約</div>
+      </div>
+    </div>
+    <p class="text-primary text-center">你選擇的是<span
+        class="fs-5 text-secondary ms-3 mt-43 mt-md-4 mt-lg-43">首次體驗課程-基礎</span></p>
+    <div class="row justify-content-center text-dark">
+      <div class="col-12 col-md-6 col-lg-4">
+        <form action="#" method="POST">
+          <p>1. 是否接觸過瑜珈?</p>
+          <div class="d-flex">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="touchYoga" id="yes2yoga" value="接觸過瑜珈" checked>
+              <label class="form-check-label" for="yes2yoga">
+                是
+              </label>
+            </div>
+            <div class="form-check ms-43">
+              <input class="form-check-input" type="radio" name="touchYoga" id="no2yoga" value="沒接觸過瑜珈">
+              <label class="form-check-label" for="no2yoga">
+                否
+              </label>
+            </div>
+          </div>
+          <p class="mt-43 mb-3">2. 想改善的生活問題?</p>
+          <div class="d-flex flex-wrap mb-3">
+            <div class="form-check me-26 me-md-3">
+              <input class="form-check-input border-secondary" type="checkbox" value="肌耐力不足" id="lackMucle">
+              <label class="form-check-label" for="lackMucle">
+                肌耐力不足
+              </label>
+            </div>
+            <div class="form-check me-26 me-md-3">
+              <input class="form-check-input border-secondary" type="checkbox" value="柔軟度不佳" id="poorSoft">
+              <label class="form-check-label" for="poorSoft">
+                柔軟度不佳
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input border-secondary" type="checkbox" value="壓力大" id="heightPresure">
+              <label class="form-check-label" for="heightPresure">
+                壓力大
+              </label>
+            </div>
+          </div>
+          <div class="d-flex flex-wrap">
+            <div class="form-check me-41 me-md-43">
+              <input class="form-check-input border-secondary" type="checkbox" value="姿勢不正" id="wrongPostrue">
+              <label class="form-check-label" for="wrongPostrue">
+                姿勢不正
+              </label>
+            </div>
+            <div class="form-check me-26 me-md-3">
+              <input class="form-check-input border-secondary" type="checkbox" value="睡眠品質差" id="poorSleep">
+              <label class="form-check-label" for="poorSleep">
+                睡眠品質差
+              </label>
+            </div>
+            <div class="form-check ">
+              <input class="form-check-input border-secondary" type="checkbox" value="注意力不足" id="badAttention">
+              <label class="form-check-label" for="badAttention">
+                注意力不足
+              </label>
+            </div>
+          </div>
+          <p class="mt-43 mb-3">3. 每週累積運動量約為多少？</p>
+          <div class="d-flex flex-wrap mb-3 mb-md-1">
+            <div class="form-check me-43">
+              <input class="form-check-input" type="radio" name="weeklyExercise" id="upTo150m" value="150 分鐘以上" checked>
+              <label class="form-check-label" for="upTo150m">
+                150 分鐘以上
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input border-secondary" type="radio" name="weeklyExercise" id="75~150m"
+                value="75~150 分鐘">
+              <label class="form-check-label" for="75~150m">
+                75~150 分鐘
+              </label>
+            </div>
+          </div>
+          <div class="d-flex flex-wrap">
+            <div class="form-check me-46">
+              <input class="form-check-input border-secondary" type="radio" name="weeklyExercise" id="30~75m"
+                value="30~75 分鐘">
+              <label class="form-check-label" for="30~75m">
+                30~75 分鐘
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input border-secondary" type="radio" name="weeklyExercise" id="less30"
+                value="30 分鐘以下">
+              <label class="form-check-label" for="less30">
+                30 分鐘以下
+              </label>
+            </div>
+          </div>
+          <p class="mt-43 mb-1">4. 上課預約報到日</p>
+          <p class="fs-7 mb-2">若還沒有確定的日期，可以等待專員與您聯絡時在做詳細的諮詢哦！</p>
+          <div>
+            <input type="text" placeholder="MM/DD/YYYY" name="datepicker" class="text-primary border-secondary">
+          </div>
+          <p class="mt-43 mb-3">5. 填寫基本資料，完成預約後會寄送通知至電子信箱</p>
+          <div class="row">
+            <div class="col-6">
+              <label for="name" class="form-label">姓名</label>
+              <input type="text" class="form-control border-secondary" id="name" placeholder="請輸入您的姓名">
+            </div>
+            <div class="col-6">
+              <label for="age" class="form-label">年齡</label>
+              <input type="text" class="form-control border-secondary" id="age" placeholder="請輸入您的年齡">
+            </div>
+          </div>
+          <label for="sexual" class="form-label mt-3">性別</label>
+          <select id="sexual" class="form-select border-secondary w-auto">
+            <option selected>女</option>
+            <option>男</option>
+          </select>
+          <label for="bookerEmail" class="form-label mt-3">電子信箱</label>
+          <input type="email" class="form-control border-secondary" id="bookerEmail" placeholder="email@example.com">
+
+          <label for="bookerTel" class="form-label mt-3">手機號碼</label>
+          <input type="tel" class="form-control border-secondary" id="bookerTel" placeholder="0912-345-678">
+          <div class="d-grid mt-43">
+            <a class="btn btn-secondary" href="./reservation-done.html">送出</a>
+            <!-- <button type="submit" class="btn btn-secondary mt-43" >送出</button> -->
+          </div>
+
+
+
+
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+</section>

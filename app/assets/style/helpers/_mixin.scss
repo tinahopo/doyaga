@@ -1,0 +1,45 @@
+$pc: 992px;
+$pad: 768px;
+$mobile: 414px;
+
+@mixin pc {
+  @media (min-width: $pc) {
+    @content;
+  }
+}
+@mixin pad {
+  @media (min-width: $pad) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
+//圖片取代文字
+@mixin hide-text {
+  text-indent: 130%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+// .ratio-1X1 {
+//   @include media-breakpoint-up(md) {
+//     --bs-aspect-ratio: calc(19 / 12 * 100%);
+//   }
+//   @include media-breakpoint-up(lg) {
+//     --bs-aspect-ratio: 100%;
+//   }
+// }
+
+.ratio-1X1 {
+  --bs-aspect-ratio: 100%;
+  @include pad {
+    --bs-aspect-ratio: calc(19 / 12 * 100%);
+  }
+  @include pc {
+    --bs-aspect-ratio: 100%;
+  }
+}

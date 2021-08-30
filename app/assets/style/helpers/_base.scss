@@ -1,0 +1,22 @@
+使icon對齊文字 .material-icons,
+.material-icons-outlined {
+  // display: inline;
+  // vertical-align: middle;
+  vertical-align: bottom;
+  // line-height: 1px;
+}
+
+img {
+  object-fit: cover;
+}
+.img-bottom {
+  object-position: bottom;
+}
+
+.img-center {
+  object-position: center;
+}
+
+.text-shadow {
+  text-shadow: $black 0.1em 0.1em 0.2em;
+}
