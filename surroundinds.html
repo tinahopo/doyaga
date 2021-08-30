@@ -1,10 +1,87 @@
----
-title: 瑜伽空間
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    瑜伽空間 | DOYOGA 做你的瑜珈
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <!-- Adobe思源黑體載入 start -->
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'ziq2fyf',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <!-- Adobe思源黑體載入 end -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning py-0 sticky-top">
+    <div class="container">
+      <a class="navbar-brand my-0 py-0" href="./index.html">
+        <img class="my-4" src="./assets/images/DOYOGA-logo.png" alt="DOYOGA">
+      </a>
+      <button class="navbar-toggler text-primary" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="material-icons text-primary fs-15 ">
+          view_headline
+        </i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+          <li class="nav-item mx-auto me-lg-43">
+            <a class="nav-link" href="./coure.html">課程介紹</a>
+          </li>
+          <li class="nav-item mx-auto me-lg-43">
+            <a class="nav-link" href="./surroundinds.html">瑜珈空間</a>
+          </li>
+          <li class="nav-item mx-auto">
+            <a class="nav-link" href="./curriculum.html">當月課表</a>
+          </li>
+        </ul>
+        <ul class="list-unstyled d-lg-flex">
+          <li class="d-flex justify-content-center mb-2 mb-lg-0 me-lg-3">
+            <a class="btn btn-outline-primary" href="./reservation.html" type="button">立即預約</a>
+          </li>
+          <li class="d-flex justify-content-center">
+            <a class="btn btn-outline-primary" href="./contact_us.html" type="button">聯絡我們</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <ul class="socialFix list-unstyled me-3 d-none d-xl-block">
+    <li class="mb-3">
+      <a class="d-block bg-white rounded-circle border-white border border-5" href="#">
+        <i class="fab fa-facebook fa-3x"></i>
+      </a>
+    </li>
+    <li class="mb-3">
+      <a class="d-block text-center bg-white border border-white border-1 border-radius-16" href="#">
+        <i class="fab fa-instagram fa-3x border border-white border-top border-3 border-radius-16"></i>
+      </a>
+    </li>
+    <li>
+      <a class="d-block text-center bg-white border border-white border-1 border-radius-16 " href="#">
+        <i class="fab fa-line fa-3x border border-white border-top border-3 border-radius-16"></i>
+      </a>
+    </li>
+  </ul>
+  
 <section class="spacing py-45 pt-md-7 pb-lg-7">
   <div class="container">
     <h3 class="text-primary text-center mb-4 mb-43">瑜珈空間</h3>
@@ -177,3 +254,62 @@ current: index
 
   </div>
 </section>
+
+    <footer class="footer bg-primary">
+      <div class="container">
+        <div class="row pt-4 pt-md-43 align-items-center">
+          <div class="col-12 col-md-8 col-lg-5 text-white fs-4 fs-md-3 fw-regular">現在訂閱，獲得課程優惠碼！</div>
+          <div class="col-12 col-md-6 col-lg-4 offset-lg-3">
+            <div class="input-group border border-white rounded">
+              <input type="email" class="form-control " placeholder="輸入您的電子信箱" aria-label="email"
+                aria-describedby="email">
+              <button class="btn btn-secondary  text-white" type="button" id="bemail">訂閱</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-top mt-4 mt-ms-43">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="./index.html"><img class="mt-4 mt-ms-43 mb-2" src="./assets/images/DOYOGA.png"
+                alt="DOYOGA logo"></a>
+            <ul class="socialIcon list-unstyled d-flex justify-content-end text-white mb-0 mt-4 mt-ms-43"
+              style="font-size: 0.5rem;">
+              <li class="ms-2">
+                <a href="#">
+                  <i class="fab fa-facebook fa-3x"></i></a>
+              </li>
+              <li class="ms-22">
+                <a href="#"><i class="fab fa-instagram fa-3x"></i>
+                </a>
+              </li>
+              <li class="ms-22">
+                <a href="#">
+                  <i class="fab fa-line fa-3x"></i>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="d-md-flex">
+            <nav class="nav flex-column ">
+              <a class="nav-link fs-6 px-0 ms-0 me-auto" href="./coure.html">課程介紹</a>
+              <a class="nav-link fs-6 px-0 me-auto" href="./surroundinds.html">瑜珈空間</a>
+              <a class="nav-link fs-6 px-0 mb-43 me-auto" href="./curriculum.html">當月課表</a>
+            </nav>
+            <div class="mt-auto mx-auto text-white fw-regular pb-2 mb-43">© 2021. All Rights Reserved.</div>
+          </div>
+
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
