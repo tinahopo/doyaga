@@ -25,15 +25,22 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-warning py-0 sticky-top">
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" cz-shortcut-listen="true">
+
+  <nav
+    class="navbar navbar-expand-lg navbar-light bg-warning w-100 py-0 sticky-top "
+    data-aos="fade-down" data-aos-easing="ease" data-aos-duration="300">
     <div class="container">
-      <a class="navbar-brand my-0 py-0" href="./index.html">
-        <img class="my-4" src="./assets/images/DOYOGA-logo.png" alt="DOYOGA">
-      </a>
+      <h1 class="logo hvr-bounce-in">DOYOGA<a class="navbar-brand my-0 py-0" href="./index.html">
+          <img class="my-4" src="./assets/images/DOYOGA-logo.png" alt="DOYOGA LOGO" data-aos="fade-down"
+            data-aos-easing="ease-in" data-aos-duration="400">
+        </a></h1>
+
       <button class="navbar-toggler text-primary" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -44,43 +51,51 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
           <li class="nav-item mx-auto me-lg-43">
-            <a class="nav-link" href="./coure.html">課程介紹</a>
+            <a class="nav-link fw-medium hvr-grow" href="./coure.html" data-aos="fade-down" data-aos-easing="ease-in"
+              data-aos-duration="500">課程介紹</a>
           </li>
           <li class="nav-item mx-auto me-lg-43">
-            <a class="nav-link" href="./surroundinds.html">瑜珈空間</a>
+            <a class="nav-link fw-medium hvr-grow" href="./surroundings.html" data-aos="fade-down"
+              data-aos-easing="ease-in" data-aos-duration="600">瑜珈空間</a>
           </li>
           <li class="nav-item mx-auto">
-            <a class="nav-link" href="./curriculum.html">當月課表</a>
+            <a class="nav-link fw-medium hvr-grow" href="./curriculum.html" data-aos="fade-down"
+              data-aos-easing="ease-in" data-aos-duration="700">當月課表</a>
           </li>
         </ul>
         <ul class="list-unstyled d-lg-flex">
           <li class="d-flex justify-content-center mb-2 mb-lg-0 me-lg-3">
-            <a class="btn btn-outline-primary" href="./reservation.html" type="button">立即預約</a>
+            <a class="btn btn-outline-primary fw-medium" href="./reservation.html" type="button" data-aos="fade-down"
+              data-aos-easing="ease-in" data-aos-duration="800">立即預約</a>
           </li>
           <li class="d-flex justify-content-center">
-            <a class="btn btn-outline-primary" href="./contact_us.html" type="button">聯絡我們</a>
+            <a class="btn btn-outline-primary fw-medium" href="./contact_us.html" type="button" data-aos="fade-down"
+              data-aos-easing="ease-in" data-aos-duration="900">聯絡我們</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <ul class="socialFix list-unstyled me-3 d-none d-xl-block">
+
+  <ul class="socialFix list-unstyled me-3 d-none d-xl-block" data-aos="fade-left" data-aos-easing="ease-in"
+    data-aos-duration="700">
     <li class="mb-3">
-      <a class="d-block bg-white rounded-circle border-white border border-5" href="#">
-        <i class="fab fa-facebook fa-3x"></i>
+      <a class="d-block bg-white rounded-circle border-white border border-5 hvr-grow" href="#">
+        <i class="fab fa-facebook fa-3x "></i>
       </a>
     </li>
     <li class="mb-3">
-      <a class="d-block text-center bg-white border border-white border-1 border-radius-16" href="#">
+      <a class="d-block text-center bg-white border border-white border-1 border-radius-16 hvr-grow" href="#">
         <i class="fab fa-instagram fa-3x border border-white border-top border-3 border-radius-16"></i>
       </a>
     </li>
     <li>
-      <a class="d-block text-center bg-white border border-white border-1 border-radius-16 " href="#">
+      <a class="d-block  text-center bg-white border border-white border-1 border-radius-16 hvr-grow" href="#">
         <i class="fab fa-line fa-3x border border-white border-top border-3 border-radius-16"></i>
       </a>
     </li>
   </ul>
+
   
 <section class="reservation-done pt-5 pt-md-7 pb-9 pb-md-8 pb-lg-92">
   <div class="container">
@@ -145,12 +160,14 @@
   </div>
 </section>
 
-    <footer class="footer bg-primary">
+    <footer class="footer bg-primary pt-4 pt-md-43 pb-43">
       <div class="container">
-        <div class="row pt-4 pt-md-43 align-items-center">
-          <div class="col-12 col-md-8 col-lg-5 text-white fs-4 fs-md-3 fw-regular">現在訂閱，獲得課程優惠碼！</div>
+        <div class="row  align-items-center">
+          <div class="col-12 col-md-8 col-lg-5 text-white fs-4 fs-md-3 fw-regular" data-aos="fade-up-left"
+            data-aos-easing="ease-in" data-aos-duration="300">現在訂閱，獲得課程優惠碼！</div>
           <div class="col-12 col-md-6 col-lg-4 offset-lg-3">
-            <div class="input-group border border-white rounded">
+            <div class="input-group border border-white rounded" data-aos="fade-left" data-aos-easing="ease-in"
+              data-aos-duration="600">
               <input type="email" class="form-control " placeholder="輸入您的電子信箱" aria-label="email"
                 aria-describedby="email">
               <button class="btn btn-secondary  text-white" type="button" id="bemail">訂閱</button>
@@ -162,10 +179,13 @@
       <div class="border-top mt-4 mt-ms-43">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <a href="./index.html"><img class="mt-4 mt-ms-43 mb-2" src="./assets/images/DOYOGA.png"
-                alt="DOYOGA logo"></a>
+            <a href="./index.html" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="400"
+              data-aos-offset="0">
+              <img class="hvr-bounce-in mt-4 mt-ms-43 mb-2" src="./assets/images/DOYOGA.png" alt="DOYOGA logo">
+            </a>
             <ul class="socialIcon list-unstyled d-flex justify-content-end text-white mb-0 mt-4 mt-ms-43"
-              style="font-size: 0.5rem;">
+              style="font-size: 0.5rem;" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="500"
+              data-aos-offset="0">
               <li class="ms-2">
                 <a href="#">
                   <i class="fab fa-facebook fa-3x"></i></a>
@@ -183,12 +203,25 @@
             </ul>
           </div>
           <div class="d-md-flex">
-            <nav class="nav flex-column ">
-              <a class="nav-link fs-6 px-0 ms-0 me-auto" href="./coure.html">課程介紹</a>
-              <a class="nav-link fs-6 px-0 me-auto" href="./surroundinds.html">瑜珈空間</a>
-              <a class="nav-link fs-6 px-0 mb-43 me-auto" href="./curriculum.html">當月課表</a>
+            <nav class="nav">
+              <ul class="d-flex flex-column list-unstyled" data-aos="fade-right" data-aos-easing="ease-in"
+                data-aos-duration="500" data-aos-offset="0">
+                <li>
+                  <a class="nav-link fs-6 hvr-grow px-0 pb-1" href="./coure.html">課程介紹</a>
+                </li>
+                <li>
+                  <a class="nav-link fs-6 hvr-grow px-0 pb-1" href="./surroundings.html">瑜珈空間</a>
+                </li>
+                <li>
+                  <a class="nav-link fs-6 hvr-grow px-0 pb-1" href="./curriculum.html">當月課表</a>
+                </li>
+              </ul>
+
+
+
             </nav>
-            <div class="mt-auto mx-auto text-white fw-regular pb-2 mb-43">© 2021. All Rights Reserved.</div>
+            <div class="mt-auto mx-auto text-white fw-regular pb-2" data-aos="zoom-in" data-aos-easing="ease-in"
+              data-aos-duration="500" data-aos-offset="0">© 2021. All Rights Reserved.</div>
           </div>
 
         </div>
@@ -198,6 +231,28 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        delay: 0, // values from 0 to 3000, with step 50ms 延遲出現，通常不加
+        once: true, // whether animation should happen only once - while scrolling down最常用的，false為全程炫到底，會耗效能
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+      });
+
+    </script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
 </body>

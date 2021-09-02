@@ -26748,6 +26748,22 @@ fieldset:disabled .btn {
   }
 }
 
+.ratio-1X1 {
+  --bs-aspect-ratio: 100%;
+}
+
+@media (min-width: 768px) {
+  .ratio-1X1 {
+    --bs-aspect-ratio: calc(19 / 12 * 100%);
+  }
+}
+
+@media (min-width: 992px) {
+  .ratio-1X1 {
+    --bs-aspect-ratio: 100%;
+  }
+}
+
 使icon對齊文字 .material-icons,
 .material-icons-outlined {
   vertical-align: bottom;
@@ -26772,6 +26788,32 @@ img {
   text-shadow: #000 0.1em 0.1em 0.2em;
 }
 
+.transLink {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.transLink:hover {
+  -ms-transform: scale(1.1);
+      transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  text-shadow: 1px 1px 2px #00000029;
+}
+
+.planChoose .card:hover,
+.reservation .card:hover {
+  -ms-transform: scale(1.1);
+      transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.logo {
+  font-size: 0px;
+}
+
 .navbar-brand img,
 footer img {
   width: 96px;
@@ -26788,15 +26830,39 @@ footer img {
 }
 
 .nav-link {
-  border-bottom: 2px solid transparent;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
 }
 
-.nav-link.active {
-  border-bottom: 2px solid #907a7b;
+.nav-link:hover::before {
+  left: 0;
+  right: 0;
 }
 
-.nav-link:hover {
-  border-bottom: 2px solid #907a7b;
+.nav-link::before {
+  content: "";
+  position: absolute;
+  left: 51%;
+  right: 51%;
+  z-index: -1;
+  bottom: 1px;
+  background: #c0a4a5;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  -o-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+     transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+     transition-timing-function: ease-out;
 }
 
 footer .nav-link {
@@ -26804,11 +26870,12 @@ footer .nav-link {
 }
 
 footer .nav-link.active {
-  color: #000;
+  color: #fff;
 }
 
 footer .nav-link:hover {
-  color: #000;
+  color: #fff;
+  text-shadow: 1px 1px 2px #707070;
 }
 
 .socialIcon a {
@@ -26828,22 +26895,6 @@ footer .nav-link:hover {
   top: 30vh;
   right: 0%;
   z-index: 999;
-}
-
-.ratio-1X1 {
-  --bs-aspect-ratio: 100%;
-}
-
-@media (min-width: 768px) {
-  .ratio-1X1 {
-    --bs-aspect-ratio: calc(19 / 12 * 100%);
-  }
-}
-
-@media (min-width: 992px) {
-  .ratio-1X1 {
-    --bs-aspect-ratio: 100%;
-  }
 }
 
 .datepicker-cell.selected,
@@ -27006,9 +27057,9 @@ footer .nav-link:hover {
 .banner {
   background-image: url(../images/ara-cho-m_zmf2J063Q-unsplash.jpg);
   background-position: center bottom;
-  background-size: cover;
-  min-height: calc(100vh - 80px);
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: 999;
 }
 
 .introImg {
