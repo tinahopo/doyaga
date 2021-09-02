@@ -2,13 +2,15 @@
 title: 立即預約
 layout: ./app/layout.ejs
 engine: ejs
-current: index
+current: reservation
 ---
 
 <section class="reservation pt-5 pt-md-7 pb-3">
   <div class="container">
-    <h3 class="text-primary text-center mb-4 mb-md-3">立即預約</h3>
-    <div class="row justify-content-center mb-43">
+    <h3 class="text-primary text-center mb-4 mb-md-3" data-aos="zoom-in" data-aos-easing="ease-in"
+      data-aos-duration="500">立即預約</h3>
+    <div class="row justify-content-center mb-43" data-aos="fade-right" data-aos-easing="ease-in"
+      data-aos-duration="600">
       <div class="col-4 col-md-2 ">
         <div class="border-radius-16 bg-primary text-white text-center py-26">
           選擇方案
@@ -23,10 +25,11 @@ current: index
     </div>
     <div class="row">
       <div class="col-12 col-lg-4 mb-3 mb-md-4">
-        <div class="experienceCard card border border-secondary position-relative">
+        <div class="experienceCard card border border-secondary position-relative" data-aos="fade-left"
+          data-aos-easing="ease-in" data-aos-duration="700">
           <div>
             <img src="./assets/images/woman in white tank top and white leggings bending her body.jpg"
-              class="card-img-top" alt="...">
+              class="card-img-top" alt="瑜伽示意照片">
           </div>
           <div class="card-body p-4">
             <h5 class="card-title text-primary text-center mb-1">首次體驗</h5>
@@ -39,9 +42,10 @@ current: index
         </div>
       </div>
       <div class="col-12 col-lg-4 mb-3 mb-md-4 d-none d-lg-block">
-        <div class="experienceCard card border border-secondary position-relative">
+        <div class="experienceCard card border border-secondary position-relative" data-aos="fade-left"
+          data-aos-easing="ease-in" data-aos-duration="800">
           <div>
-            <img src="./assets/images/woman performing yoga.jpg" class="card-img-top" alt="...">
+            <img src="./assets/images/woman performing yoga.jpg" class="card-img-top" alt="瑜伽示意照片">
           </div>
           <div class="card-body p-4">
             <h5 class="card-title text-primary text-center mb-1">短期體驗</h5>
@@ -52,10 +56,11 @@ current: index
         </div>
       </div>
       <div class="col-12 col-lg-4 d-none d-lg-block">
-        <div class="experienceCard card border border-secondary position-relative">
+        <div class="experienceCard card border border-secondary position-relative" data-aos="fade-left"
+          data-aos-easing="ease-in" data-aos-duration="900">
           <div>
             <img src="./assets/images/woman in blue leggings and black tank top doing yoga.jpg" class="card-img-top"
-              alt="...">
+              alt="瑜伽示意照片">
           </div>
           <div class="card-body p-4">
             <h5 class="card-title text-primary text-center mb-1">長期體驗</h5>
@@ -83,12 +88,14 @@ current: index
 <section class="chooseLevel collapse show bg-primary pt-43 pb-5 pt-lg-45 pb-lg-7" id="collapseLevel">
   <div class="container">
 
-    <h3 class="text-white text-center mb-4 mb-lg-43">選擇課程階級</h3>
+    <h3 class="text-white text-center mb-4 mb-lg-43" data-aos="zoom-in" data-aos-easing="ease-in"
+      data-aos-duration="500">選擇課程階級</h3>
 
     <div class="swiper swiperLevel">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div class="card bg-secondary shadow p-4">
+          <div class="card bg-secondary shadow p-4" data-aos="fade-right" data-aos-easing="ease-in"
+            data-aos-duration="500">
             <div class="card-body  text-white">
               <div class=" d-flex justify-content-between align-items-center">
                 <h4 class="fs-3">基礎 Basic</h4>
@@ -109,7 +116,8 @@ current: index
         </div>
 
         <div class="swiper-slide">
-          <div class="card bg-secondary shadow p-4">
+          <div class="card bg-secondary shadow p-4" data-aos="fade-right" data-aos-easing="ease-in"
+            data-aos-duration="700">
             <div class="card-body  text-white">
               <div class=" d-flex justify-content-between align-items-center">
                 <h4 class="fs-3">中階 Intermediate</h4>
@@ -130,7 +138,8 @@ current: index
         </div>
 
         <div class="swiper-slide">
-          <div class="card bg-secondary shadow p-4">
+          <div class="card bg-secondary shadow p-4" data-aos="fade-right" data-aos-easing="ease-in"
+            data-aos-duration="900">
             <div class="card-body  text-white">
               <div class=" d-flex justify-content-between align-items-center">
                 <h4 class="fs-3">高階 Advanced</h4>
@@ -158,17 +167,19 @@ current: index
   <div class="container">
     <div class="row flex-column align-items-center">
       <div class="col-md-8 col-lg-6 text-center">
-        <p class="text-primary mb-1">您選擇的是</p>
-        <h4 class="fs-5 text-primary d-inline-block border-bottom border-2 border-secondary">首次體驗課程-基礎</h4>
-        <h3 class="text-primary">預約須知</h3>
-        <ol class="text-start text-primary">
+        <p class="text-primary mb-1" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="500">您選擇的是</p>
+        <h4 class="fs-5 text-primary d-inline-block border-bottom border-2 border-secondary" data-aos="fade-up"
+          data-aos-easing="ease-in" data-aos-duration="600">首次體驗課程-基礎</h4>
+        <h3 class="text-primary" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="700">預約須知</h3>
+        <ol class="text-start text-primary" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="800">
           <li class="pb-1">如果有特殊體質、特殊狀況，請主動告知。</li>
           <li class="pb-1">取消預約或時間異動請於預約日前一天晚間 21:00 前告知，預約當日請勿異動或取消，以免影響您日後再預約的個人信用及難度。</li>
           <li class="pb-1">為維護上課品質，請遵守 DOYOGA 各項參觀規定，未遵守規定者，本公司保留謝絕入館之權利。</li>
           <li class="pb-43">DOYOGA 保留修改預約須知之權利，修改後的條款將公佈於本網站上，不另外個別通知。如果您繼續在本網站進行參觀預約，就表示您已經了解、並同意遵守修改後的約定條款。</li>
         </ol>
         <div class="d-grid col-md-4 mx-auto">
-          <a href="./reservation-2.html" class="btn btn-secondary  ">繼續預約</a>
+          <a href="./reservation-2.html" class="btn btn-secondary" data-aos="fade-up" data-aos-easing="ease-in"
+            data-aos-duration="900">繼續預約</a>
         </div>
 
       </div>

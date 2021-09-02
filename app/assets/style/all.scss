@@ -4,9 +4,10 @@
 @import "./helpers/custom-utilities";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+@import "./helpers/mixin";
+
 @import "./helpers/base";
 @import "./helpers/nav";
-@import "./helpers/mixin";
 @import "./helpers/datepicker";
 @import "./helpers/form";
 @import "./helpers/cus-modal";

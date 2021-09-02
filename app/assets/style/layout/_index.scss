@@ -2,9 +2,11 @@
   // height: 582px;
   background-image: url(../images/ara-cho-m_zmf2J063Q-unsplash.jpg);
   background-position: center bottom;
-  background-size: cover;
-  min-height: calc(100vh - 80px);
+  // background-size: cover;
+  // min-height: calc(100vh - 80px);
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: 999;
 }
 
 .introImg {

@@ -20,3 +20,19 @@ img {
 .text-shadow {
   text-shadow: $black 0.1em 0.1em 0.2em;
 }
+
+.transLink {
+  transition: transform 0.5s ease;
+}
+
+.transLink:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  text-shadow: 1px 1px 2px $light;
+}
+
+.planChoose .card:hover,
+.reservation .card:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}

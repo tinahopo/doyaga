@@ -18,9 +18,10 @@ $mobile: 414px;
   }
 }
 
-//圖片取代文字
+//圖片取代文字，需要將圖片做為背景使用
+//但做背景就沒有img的alt了
 @mixin hide-text {
-  text-indent: 130%;
+  text-indent: 101%;
   white-space: nowrap;
   overflow: hidden;
 }
