@@ -27055,7 +27055,7 @@ footer .nav-link:hover {
 }
 
 .banner {
-  background-image: url(../images/banner.jpg);
+  background-image: url(./../images/banner.jpg);
   background-position: center bottom;
   background-attachment: fixed;
   background-repeat: no-repeat;
