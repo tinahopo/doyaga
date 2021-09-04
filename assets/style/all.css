@@ -27055,9 +27055,8 @@ footer .nav-link:hover {
 }
 
 .banner {
-  background-image: url(../images/rawan-yasser-zQ1ypq-WHzQ-unsplash.jpg);
+  background-image: url(../images/banner.jpg);
   background-position: center bottom;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   z-index: 999;
 }
