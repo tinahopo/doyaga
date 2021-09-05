@@ -156,6 +156,11 @@ var swiper = new Swiper(".recommendSwiper", {
   }
 });
 
+$('.cardLevel').click(function (e) {
+  e.preventDefault();
+  $('.cardLevel').toggleClass('active');
+});
+
 const elem = document.querySelector('input[name="datepicker"]');
 const datepicker = new Datepicker(elem, {
   autohide: true,

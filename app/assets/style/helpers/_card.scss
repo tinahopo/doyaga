@@ -1,3 +1,11 @@
 .card {
   border: 0;
 }
+
+.cardLevel {
+  border-color: transparent;
+}
+
+.cardLevel .active {
+  border-color: $white;
+}
