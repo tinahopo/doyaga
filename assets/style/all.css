@@ -27184,7 +27184,6 @@ footer .nav-link:hover {
   background-image: url(../images/banner.jpg);
   background-position: center bottom;
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   z-index: 999;
 }
