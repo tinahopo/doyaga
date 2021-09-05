@@ -140,6 +140,10 @@ var swiper = new Swiper(".recommendSwiper", {
     }
   }
 });
+$('.cardLevel').click(function (e) {
+  e.preventDefault();
+  $('.cardLevel').toggleClass('active');
+});
 var elem = document.querySelector('input[name="datepicker"]');
 var datepicker = new Datepicker(elem, {
   autohide: true,
